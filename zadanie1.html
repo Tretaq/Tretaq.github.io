@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1000px;
+        }
+        #text{
+            width: 680px;
+            float: left;
+            
+        }
+        #image{
+            width: 210px;
+            float: left;
+            
+        }
+        
+        @media(max-width:800px){
+            #text{
+                width: 70%;              
+                font-size: 15pt;
+                
+            }
+            #image{
+                width: 70%;              
+                font-size: 15pt; 
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="image"> <img src="pobrane.jpg" alt=""></div>
+        <div id="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet, ipsa, repellat, cumque at culpa veritatis qui quibusdam alias et sit corporis nemo nobis voluptatibus autem tempore officia omnis numquam?</div>
+        
+        <div style="clear: both;"></div>
+    </div>
+</body>
+</html>
