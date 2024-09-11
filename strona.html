@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schweppes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #b6ce30;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar a {
+            flex: 1;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #c5ecc8;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .wybor {
+            background-color: #d5e643;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            line-height: 0%;
+            cursor: pointer;
+        }
+
+        .wybor:hover {
+            background-color: yellow;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+
+        #img1 {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Schweppes</h1>
+        <p><b>Refreshment & History</b> on a page.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Flavor of the Month</h2>
+            <h5>Mojito</h5>
+            <div class="fakeimg"><img id="img1" src="pol_pl_NAPOJ-SCHWEPPES-MOJITO-0-85L-625_1_1.jpg" alt="Schweppes Mojito"></div>
+            <p>Discover the refreshing taste of Mojito with a twist of Schweppes.</p>
+            
+            <h3>Vote for Flavor of the Month</h3>
+            <div class="wybor" style="height:60px;"><h2>Lemon</h2></div><br>
+            <div class="wybor" style="height:60px;"><h2>Ginger Ale</h2></div><br>
+            <div class="wybor" style="height:60px;"><h2>Wild Berry</h2></div>
+        </div>
+
+        <div class="main">
+            <h2>Our History</h2>
+            <h5>Founded in 1783, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Schweppes Timeline</div>
+            <p>Schweppes has been a symbol of quality beverages since 1783, bringing sparkling water and premium mixers to homes worldwide.</p>
+            <p>Our products are a testament to innovation, with iconic flavors like Tonic Water, Ginger Ale, and Club Soda setting the standard in refreshment.</p>
+            
+            <br>
+
+            <h2>Latest News</h2>
+            <h5>What's new, Sep 2, 2023</h5>
+            <div class="fakeimg" style="height:200px;">Schweppes Innovations</div>
+            <p>Discover our latest innovations and expansions in the beverage industry. From new flavors to sustainable packaging, Schweppes continues to lead the market.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: info@schweppes.com | Phone: +123-456-7890</p>
+    </div>
+
+</body>
+</html>
