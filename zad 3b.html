@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Car Animation on Curves</title>
+    <style>
+        #container {
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            background-color: bisque;
+            position: relative;
+            border: 2px solid black;
+        }
+
+        #auto {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            border-radius: 20px; 
+            border: solid 5px black ;
+            transform-origin: center center;
+            animation: moveCar 10s linear infinite;
+        }
+
+        @keyframes moveCar {
+          
+            0% {
+                transform: translate(50px, 50px) rotate(0deg);
+            }
+           
+            22% {
+                transform: translate(650px, 50px) rotate(0deg);
+            }
+           
+            30% {
+                transform: translate(750px, 150px) rotate(90deg);
+            }
+          
+            47% {
+                transform: translate(750px, 650px) rotate(90deg);
+            }
+     
+            55% {
+                transform: translate(650px, 750px) rotate(180deg);
+            }
+    
+            72% {
+                transform: translate(150px, 750px) rotate(180deg);
+            }
+           
+            80% {
+                transform: translate(50px, 650px) rotate(270deg);
+            }
+           
+            99% {
+                transform: translate(50px, 50px) rotate(270deg);
+            }
+            
+            100% {
+                transform: translate(50px, 50px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="auto"></div>
+    </div>
+</body>
+</html>
