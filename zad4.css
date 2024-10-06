@@ -1,0 +1,128 @@
+/* Ogólne ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(182, 180, 180);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+#container {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(61, 57, 57);
+    position: relative;
+    min-height: 1000px;
+    border-radius: 5%;
+}
+
+/* Stylizacja header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Stylowanie sekcji home */
+#home {
+    background: url('granatowa-marynarka-turin1 (6).png') no-repeat center center/cover;
+    height: 600px;
+    color: rgb(134, 172, 179);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Kontener dla sekcji about, omnie i extra */
+#about-omnie-container {
+    display: flex;
+    flex-wrap: wrap;  /* Elementy mogą się łamać w wierszach */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sekcja o mnie, about i extra */
+#omnie, #about, #extra {
+    color: rgb(134, 172, 179);
+    width: 48%;  /* Szerokość 48%, aby obok siebie zmieściły się 2 elementy */
+    background-color: #534f4f;
+    border-radius: 10%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Stylowanie ol (lista projektów) */
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li a {
+    color: rgb(134, 172, 179);
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Na małych ekranach (<768px) */
+@media (max-width: 768px) {
+    #about-omnie-container {
+        flex-direction: column;
+    }
+
+    #omnie, #about, #extra {
+        width: 100%; /* Elementy będą jeden pod drugim */
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Na średnich ekranach (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #omnie, #about, #extra {
+        width: 48%;  /* Elementy będą obok siebie, jak na dużych ekranach */
+    }
+}
+
+/* Na większych ekranach (>1024px) */
+@media (min-width: 1024px) {
+    #container {
+        width: 1000px;  /* Stała szerokość kontenera */
+    }
+}
